@@ -3,7 +3,7 @@
 	"version": "1.0.4",
 	"description": "",
 	"main": "lib/greeter.js",
-	"typings": "lib/src/index.d.ts",
+	"typings": "lib/types/index.d.ts",
 	"scripts": {
 		"prepublish": "webpack --debug",
 		"test": "./node_modules/mocha/bin/mocha"

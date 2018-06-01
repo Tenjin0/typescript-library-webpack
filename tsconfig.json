@@ -7,7 +7,8 @@
         "preserveConstEnums": true,
         "removeComments": false,
         "sourceMap": true,
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "declarationDir": "./types"
     },
     "exclude": [
         "node_modules"
