@@ -1,5 +1,5 @@
-import {Greeter} from "../lib/greeter.node"
+import {Greeter} from "../lib/greeter"
 
 
 const greeter = new Greeter('toto');
-console.log(greeter.greet)
+console.log(greeter.greet())
