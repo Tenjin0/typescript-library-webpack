@@ -12,7 +12,7 @@ module.exports = {
 	output: {
 		filename: '[name].js',
 		path: path.resolve(__dirname, 'lib'),
-		libraryTarget: "umd",
+		libraryTarget: "commonjs",
 		library: "lib",
 		umdNamedDefine: true
 	},
