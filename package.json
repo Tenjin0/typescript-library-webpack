@@ -1,11 +1,12 @@
 {
-  "name": "typescript-library-webpack",
+  "name": "tenji-greeter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "lib/greeter.js",
+  "types": "lib/src/index.d.ts",
   "scripts": {
     "prepublish": "webpack --debug",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
     "babel-core": "^6.21.0",
     "babel-loader": "^7.1.4",
     "babel-preset-es2015": "^6.18.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "mocha-jsdom": "^1.1.0",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.9.1",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.4"
