@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const merge = require('webpack-merge');
 
-const baseConfig =  {
+const baseConfig = {
 	mode: 'development',
 	entry: {
 		"greeter": path.join(__dirname, 'src', 'index.ts'),
@@ -14,6 +14,7 @@ const baseConfig =  {
 		filename: '[name].js',
 		path: path.resolve(__dirname, 'lib'),
 		libraryTarget: 'umd',
+		globalObject: 'this',
 		umdNamedDefine: true
 	},
 	module: {
@@ -37,9 +38,9 @@ const baseConfig =  {
 	]
 };
 
-const serverConfig = merge(baseConfig, { target: "node", output: {
-	filename : '[name].node.js'
-}})
-const clientConfig = merge(baseConfig, { target: "web"})
+// const serverConfig = merge(baseConfig, { target: "node", output: {
+// 	filename : '[name].node.js'
+// }})
+// const clientConfig = merge(baseConfig, { target: "web"})
 
-module.exports = [ serverConfig, clientConfig]
+module.exports = [baseConfig]
