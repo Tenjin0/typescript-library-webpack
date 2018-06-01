@@ -2,12 +2,12 @@
     "compileOnSave": false,
     "compilerOptions": {
         "declaration": true,
+        "target": "es5",
         "noImplicitAny": true,
         "preserveConstEnums": true,
         "removeComments": false,
         "sourceMap": true,
-        "moduleResolution": "node",
-        "target": "es2015"
+        "moduleResolution": "node"
     },
     "exclude": [
         "node_modules"
