@@ -1,1 +1,1 @@
-# typescript-library-webpack
+# tenji-greeter
